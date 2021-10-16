@@ -1,0 +1,20 @@
+{
+  "name": "dynamic-svg",
+  "description": "Webcomponent dynamic-svg following open-wc recommendations",
+  "license": "MIT",
+  "author": "dynamic-svg",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "web-test-runner --coverage",
+    "test:watch": "web-test-runner --watch",
+    "start": "web-dev-server"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@open-wc/testing": "next",
+    "@web/dev-server": "^0.1.21",
+    "@web/test-runner": "^0.13.16"
+  }
+}
