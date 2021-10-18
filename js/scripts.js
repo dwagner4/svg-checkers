@@ -2,6 +2,8 @@ var bd = document.getElementById('bd')
 var lite = document.getElementById('lite')
 var dark = document.getElementById('dark')
 
+console.log(gsap)
+
 for (var r = 0; r < 8; r++) {
   for ( var c = 0; c < 8; c++) {
     const r2 = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
@@ -18,6 +20,11 @@ for (var r = 0; r < 8; r++) {
   }
 }
 
+var _moveit = (e) => {
+  console.log()
+  gsap.to('#a9', {cy: 450, cx: 250, duration: 2})
+}
+
 for (var r = 0; r < 3; r++) {
   for ( var c = 0; c < 8; c++) {
     const cir = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
@@ -25,6 +32,9 @@ for (var r = 0; r < 3; r++) {
     cir.setAttribute('cy', r * 100 + 50);
     cir.setAttribute('r', 40);
     cir.setAttribute('class', "litepiece");
+    cir.setAttribute('id', "a9")
+    // cir.setAttribute('onclick','_moveit("#a9")');
+    cir.onclick = () => {_moveit('#a9');};
     if (!((((r % 2 === 0) && (c % 2 === 0)) || ((r % 2 === 1) && (c % 2 === 1))))) {
       lite.appendChild(cir)
     }
@@ -43,4 +53,6 @@ for (var r = 5; r < 8; r++) {
     }
   }
 }
+
+
 
