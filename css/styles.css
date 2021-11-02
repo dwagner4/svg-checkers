@@ -5,18 +5,18 @@ body {
   font-family: sans-serif;
   background-color: #ededed;
 }
-#daddy {
+#app {
   width: 50%;
 }
 .litespace {
-  fill: red;
+  fill: #eae2b7;
 }
 .darkspace {
-  fill: #222;
+  fill: #f77f00;
 }
 .litepiece {
-  fill: purple;
+  fill: #d62828;
 }
 .darkpiece {
-  fill: green;
+  fill: #003049;
 }
